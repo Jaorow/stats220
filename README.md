@@ -28,3 +28,11 @@
 
 
 `Checkout my github acount (:` [Here](https://github.com/Jaorow)
+
+
+
+## Setting up github on postit... 
+1. setup SSH key using `ssh-keygen -t rsa -b 4096 -C "<email>"`
+2. display SSH public key with `more <key location>`
+3. add key to github
+4. change remote location `git remote set-url origin git@github.com:<username>/<repo>.git`
