@@ -3,6 +3,7 @@
 ![rLogo](https://media.giphy.com/media/rGlAZysKBcjRCkAX7S/giphy.gif)
 
 [github pages](https://jaorow.github.io/stats220/)
+
 *A repo for the class Stats 220 containing all work from the semester.*
 
 ### Things i like
