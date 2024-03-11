@@ -15,11 +15,9 @@ w1_words <-  image_annotate(w1,text="Running R on Posit Cloud\nto avoid local se
 w2 <- image_read('https://i.imgflip.com/1ttxqm.jpg')
 w2_words <- image_annotate(w2, text="Running into Github \nissues 10 minutes in.",size = s+10, color = "white", gravity = "south",boxcolor = "black")
 
-frames <- c(w1,w1_words,w2,w2_words)
-ani <- image_animate(frames,fps = 1) %>% image_write("my_animation.gif")
+image_animate(c(w1,w1_words,w2,w2_words),fps = 1) %>% image_write("Project1/my_animation.gif")
 
-ani %>% image_write("Project1/my_animation.gif")
-  
+
 
 
 
