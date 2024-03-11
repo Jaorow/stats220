@@ -86,3 +86,6 @@ image_animate(c(w1,w1_words,w2,w2_words),fps = 1) %>% image_write("my_animation.
 I think that i demonstrated some creativity in the css of this RMD code, i also changed my site to include a link to this knitted file so that it can be viewed from my github pages site
 
 ## Learning reflection
+I learnt a lot through this project and thoroughly enjoyed it, it was fun to learn the basics of GitHub pages, R and Rmd (I was pleasantly surprised at how useful and intuitive Rmd is) I loved how the editor did things such as displaying components such as images when coding... it made a lot of steps much easer to debug. I'm excited to see how the combination of R and Rmd can be utilized to handle large amounts of data later in the course.
+
+![rLogo](https://media.giphy.com/media/rGlAZysKBcjRCkAX7S/giphy.gif)
