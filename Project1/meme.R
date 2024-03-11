@@ -18,5 +18,6 @@ w2 <- image_read('https://i.imgflip.com/1ttxqm.jpg') %>%
 combined <- image_scale(image_append(c(image_scale(w1,"300"), image_scale(w2,"300")), stack=TRUE),"300")
 print(combined)
 
+combined %>% image_write("Project1/my_meme.png")
 
 
