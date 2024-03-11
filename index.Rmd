@@ -20,3 +20,5 @@ color: orange;
 ```
 
 ## Welcome to the start of my stats site
+
+[Project 1](Project1/project1_report.html)
