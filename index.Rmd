@@ -1,0 +1,22 @@
+---
+title: "Stats 220 site"
+author: "Jamie Dunwoodie-Rowley"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, error=FALSE)
+```
+
+```{css, echo=FALSE}
+body{
+color: white;
+background-color: black;
+}
+h1{
+color: orange;
+}
+
+```
+
+## Welcome to the start of my stats site
