@@ -1,0 +1,62 @@
+---
+title: "Project 2"
+author: "Jamie Dunwoodie-Rowley"
+output:
+  html_document:
+    code_folding: hide
+subtitle: "STATS 220 Semester One 2024"
+---
+
+```{r setup, include=FALSE}
+# Load required libraries
+library(tidyverse)
+
+# Set chunk options
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, error=FALSE)
+```
+
+## Introduction
+
+## Analytics
+
+Three things i learnt about the data:
+
+-   I learnt that the highest common personal cost is phone plans, this makes sense as often poeple living at home still have to pay for there phone plans
+
+-   I learnt that the lowest personal cost category was travel, I believe this is because people dont travel on a week to week basis, instead they save for a few big trip.
+
+-   very few people save more than 50% of there income a week it is the least saved amount
+
+```{r, include=TRUE}
+#load data...
+learning_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTkTVJOlnhruvrKBti7-64d16vJkLC9Lcyr5HHe_HbsoBE-cq-EEVgOQnrwsahoVh4PMZmzH5yO95W0/pub?output=csv")
+
+#Rename cols
+learning_data <- learning_data %>%
+  rename(total_income=2,living_out=3,living_costs=4,personal_expences=5,personal_costs=6,expected_savings=7)
+#calculate total income
+total_income <- sum(learning_data$total_income, na.rm = TRUE) # had to remove na values as some people didnt put in answers before i made them all required! 
+
+# Calculate average personal spend
+avr_personal_spend <- sum(learning_data$personal_expenses, na.rm = TRUE) / sum(!is.na(learning_data$personal_expenses)) #had to google this is.na function!! 
+# Calculate average living spend
+avr_living_spend <- sum(learning_data$living_out, na.rm = TRUE) / sum(!is.na(learning_data$living_out))
+
+print(paste("The total income of all participants was $", total_income, sep=""))
+print(paste("Average personal spend $",avr_personal_spend, ", Average living spend $",avr_living_spend, sep=""))
+
+learning_data %>%
+  ggplot() +
+  geom_bar(aes(x = total_income, fill=expected_savings))
+
+utilities <- learning_data %>% 
+  separate_rows(living_costs, sep = ", ")
+
+utilities %>%
+  ggplot() +
+  geom_bar(aes(x = living_costs))
+```
+
+## Creativity
+
+## Learning reflection
