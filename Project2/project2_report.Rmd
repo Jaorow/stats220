@@ -92,7 +92,7 @@ utilities <- learning_data %>%
 
 utilities %>%
   ggplot() +
-  geom_bar(aes(x = living_costs, fill="black"))
+  geom_bar(aes(x = living_costs))
 ```
 
 -   The total income of all participants is `r ti`
@@ -105,7 +105,7 @@ I demonstrated creativity in two main ways;
 
 1.  The use of mean and round, both functions i had to find by reading [R docs](https://www.rdocumentation.org/search?q=round)
 
-2.  The beautifying of my RMD document, changing the CSS to show an orange and black theme
+2.  I was also creative in designing the expected savings VS total income graph utilizing the fill to demonstrate the amount that participents save each week in respect to their incomes.
 
 ## Learning reflection
 
