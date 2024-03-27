@@ -2,9 +2,10 @@
 title: "Project 2"
 author: "Jamie Dunwoodie-Rowley"
 output:
+  pdf_document: default
   html_document:
     code_folding: hide
-subtitle: "STATS 220 Semester One 2024"
+subtitle: STATS 220 Semester One 2024
 ---
 
 ```{r setup, include=FALSE}
